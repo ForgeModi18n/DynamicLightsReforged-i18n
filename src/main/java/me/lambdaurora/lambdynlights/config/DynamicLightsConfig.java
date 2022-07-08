@@ -4,6 +4,7 @@ import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;
 import lombok.val;
 import net.minecraftforge.common.ForgeConfigSpec;
+import  net.minecraft.client.resources.I18n;
 
 import java.nio.file.Path;
 
@@ -19,13 +20,13 @@ public class DynamicLightsConfig
 
     static
     {
-        val builder = new ConfigBuilder("Dynamic Lights Settings");
+        val builder = new ConfigBuilder(I18n.get("dynlights.dynlights_settings.option.name"));
 
-        builder.Block("Lighting Settings", b -> {
-            Quality = b.define("Quality Mode (OFF, SLOW, FAST, REALTIME)", "REALTIME");
-            EntityLighting = b.define("Dynamic Entity Lighting", true);
-            TileEntityLighting = b.define("Dynamic TileEntity Lighting", true);
-            OnlyUpdateOnPositionChange = b.define("Only Update On Position Change", true);
+        builder.Block(I18n.get("dynlights.lighting_setting.option.name"), b -> {
+            Quality = b.define(I18n.get("dynlights.lighting_setting.quality_mode.title"), "REALTIME");
+            EntityLighting = b.define(I18n.get("dynlights.lighting_setting.entity_lighting.title"), true);
+            TileEntityLighting = b.define(I18n.get("dynlights.lighting_setting.tile_entity_lighting.title"), true);
+            OnlyUpdateOnPositionChange = b.define(I18n.get("dynlights.lighting_setting.only_update_on_position_change.title"), true);
         });
 
         ConfigSpec = builder.Save();
