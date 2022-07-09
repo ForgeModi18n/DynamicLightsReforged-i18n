@@ -1,20 +1,25 @@
 modLoader="javafml" #mandatory
 loaderVersion="[36,)" #mandatory
 license="MIT"
+
 [[mods]] #mandatory
 modId="dynamiclightsreforged" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Dynamic Lights Reforged" #mandatory
-logoFile= "../icon_old.png" #optional
+logoFile= "icon.png" #optional
 credits="TeamDeusVult" #optional
 authors="TexTrue,TexStudio-i18nProject" #optional
-description='''Dynamic Lights Reforged'''
+description='''
+Dynamic Lights Reforged
+'''
+
 [[dependencies.dynamiclightsreforged]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
     versionRange="[36,)" #mandatory
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.dynamiclightsreforged]]
     modId="minecraft"
     mandatory=true
