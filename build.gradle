@@ -28,7 +28,9 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
-apply from: 'https://raw.githubusercontent.com/SizableShrimp/Forge-Class-Remapper/main/classremapper.gradle'
+//apply from: 'https://raw.githubusercontent.com/SizableShrimp/Forge-Class-Remapper/main/classremapper.gradle' //International mirror (Original-Github)
+apply from: 'https://gitlab.com/Texx/Forge-Class-Remapper/-/raw/main/classremapper.gradle' //Mainland China mirror (GitLab)
+//apply from: 'https://bitbucket.org/textrue/forge-class-remapper-mirror/raw/cd40316e7f9b54e6ef4dfd4d200e8b11dff80efe/classremapper.gradle' //Mainland China mirror (Bitbucket)
 
 boolean dev = System.getenv('RELEASE') == null || System.getenv('RELEASE').equals('false');
 
@@ -138,7 +140,7 @@ jar {
                 "Specification-Vendor": "vice",
                 "Specification-Version": "1",
                 "Implementation-Title": project.name,
-                "Implementation-Version": "${version}",
+                "Implementation-Version": "${mod_version}",
                 "Implementation-Vendor" :"vice",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
                 "MixinConfigs": "${mod_id}.mixins.json"
