@@ -5,12 +5,12 @@ license="MIT"
 [[mods]] #mandatory
 modId="dynamiclightsreforged" #mandatory
 version="${file.jarVersion}" #mandatory
-displayName="Dynamic Lights Reforged" #mandatory
+displayName="Rubidium Dynamic Lights" #mandatory
 logoFile= "icon.png" #optional
 credits="TeamDeusVult" #optional
 authors="TexTrue,TexStudio-i18nProject" #optional
 description='''
-Dynamic Lights Reforged
+Rubidium Dynamic Lights
 '''
 
 [[dependencies.dynamiclightsreforged]] #optional
