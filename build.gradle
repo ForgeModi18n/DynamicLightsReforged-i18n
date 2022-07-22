@@ -71,7 +71,7 @@ minecraft {
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             mods {
-                dynamiclightsreforged {
+                rubidium_dynamiclights {
                     source sourceSets.main
                 }
             }
@@ -84,7 +84,7 @@ minecraft {
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             mods {
-                dynamiclightsreforged {
+                rubidium_dynamiclights {
                     source sourceSets.main
                 }
             }
@@ -99,7 +99,7 @@ minecraft {
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             args '--mod', String.valueOf(mod_id), '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources')
             mods {
-                dynamiclightsreforged {
+                rubidium_dynamiclights {
                     source sourceSets.main
                 }
             }
@@ -116,7 +116,7 @@ sourceSets.main.resources {
 }
 
 mixin {
-    add sourceSets.main, "dynamiclightsreforged.refmap.json"
+    add sourceSets.main, "rubidium_dynamiclights.refmap.json"
 }
 
 dependencies {
