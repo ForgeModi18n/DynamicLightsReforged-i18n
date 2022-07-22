@@ -8,9 +8,13 @@
 ### 这是干什么的？
 Magnesium / Rubidium-DynamicLights 不支持本地化（硬编码），本Fork修改代码让其支持本地化。翻译问题请到issues反馈。
 
-1.16.5下载：[mc1.16-v1.0.2-i18n](hhttps://github.com/ForgeModi18n/MgRbDynamicLights-i18n/releases/tag/v1.0.2-i18n-mc1.16)
+### 下载链接
 
-1.18.2下载：[mc1.18-v1.3.2-i18n](https://github.com/ForgeModi18n/MgRbDynamicLights-i18n/releases/tag/v1.3.2-i18n-mc1.18)
+1.16.5 : [mc1.16-v1.0.2-i18n](https://github.com/ForgeModi18n/MgRbDynamicLights-i18n/releases/tag/v1.0.2-i18n-mc1.16)
+
+1.16.5 兼容 Rubidium : [mc1.16-v0.1.2-Compatibility](https://github.com/ForgeModi18n/MgRbDynamicLights-i18n/releases/tag/mc1.16-v0.1.2-Compatibility)
+
+1.18.2 : [mc1.18-v1.3.2-i18n](https://github.com/ForgeModi18n/MgRbDynamicLights-i18n/releases/tag/mc1.18-v1.3.2-i18n)
 
 ### 链接
 
