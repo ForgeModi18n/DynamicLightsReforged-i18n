@@ -6,10 +6,10 @@ import net.minecraft.client.resources.I18n;
 
 public enum QualityMode implements TextProvider
 {
-    OFF(I18n.get("rb_dynlights.options.off")),
-    SLOW(I18n.get("rb_dynlights.options.slow")),
-    FAST(I18n.get("rb_dynlights.options.fast")),
-    REALTIME(I18n.get("rb_dynlights.options.realtime"));
+    OFF("Off"),
+    SLOW("Slow"),
+    FAST("Fast"),
+    REALTIME("Realtime");
 
     private final String name;
 
