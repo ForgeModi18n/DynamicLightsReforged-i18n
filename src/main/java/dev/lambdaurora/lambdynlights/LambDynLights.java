@@ -83,7 +83,7 @@ public class LambDynLights {
 
 	public LambDynLights() {
 		INSTANCE = this;
-		log("Initializing Dynamic Lights Reforged...");
+		log("Initializing Rubidium Dynamic Lights ...");
 		//this.config.load();
 		DynamicLightsConfig.loadConfig(FMLPaths.CONFIGDIR.get().resolve("rubidium_dynamic_lights.toml"));
 
