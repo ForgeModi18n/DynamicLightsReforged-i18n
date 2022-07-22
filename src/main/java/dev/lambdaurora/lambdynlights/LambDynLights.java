@@ -65,10 +65,10 @@ class ExecutorHelper {
 }
 
 
-@Mod("dynamiclightsreforged")
+@Mod("rubidium_dynamiclights")
 public class LambDynLights {
 
-	public static final String MODID = "dynamiclightsreforged";
+	public static final String MODID = "rubidium_dynamiclights";
 	private static final double MAX_RADIUS = 7.75;
 	private static final double MAX_RADIUS_SQUARED = MAX_RADIUS * MAX_RADIUS;
 	private static LambDynLights INSTANCE;
@@ -85,7 +85,7 @@ public class LambDynLights {
 		INSTANCE = this;
 		log("Initializing Dynamic Lights Reforged...");
 		//this.config.load();
-		DynamicLightsConfig.loadConfig(FMLPaths.CONFIGDIR.get().resolve("dynamic_lights_reforged.toml"));
+		DynamicLightsConfig.loadConfig(FMLPaths.CONFIGDIR.get().resolve("rubidium_dynamic_lights.toml"));
 
 		//MinecraftForge.EVENT_BUS.register(this);
 

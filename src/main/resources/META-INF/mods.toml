@@ -3,7 +3,7 @@ loaderVersion="[36,)" #mandatory
 license="MIT"
 
 [[mods]] #mandatory
-modId="dynamiclightsreforged" #mandatory
+modId="rubidium_dynamiclights" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Rubidium Dynamic Lights" #mandatory
 logoFile="icon.png" #optional
@@ -13,14 +13,14 @@ description='''
 Adds Dynamic Lights to Rubidium.
 '''
 
-[[dependencies.dynamiclightsreforged]] #optional
+[[dependencies.rubidium_dynamiclights]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
     versionRange="[36,)" #mandatory
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dynamiclightsreforged]]
+[[dependencies.rubidium_dynamiclights]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.2,1.19)"

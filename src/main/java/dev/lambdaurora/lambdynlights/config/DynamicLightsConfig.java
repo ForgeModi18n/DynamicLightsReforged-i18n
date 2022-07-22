@@ -19,13 +19,13 @@ public class DynamicLightsConfig
 
     static
     {
-        var builder = new ConfigBuilder(I18n.get("dynlights.settings.group.name"));
+        var builder = new ConfigBuilder("Dynamic Lights Settings");
 
-        builder.Block(I18n.get("dynlights.lighting_setting.page.name"), b -> {
-            Quality = b.defineEnum(I18n.get("dynlights.quality_mode.name"), QualityMode.REALTIME);
-            EntityLighting = b.define(I18n.get("dynlights.entity_lighting.name"), true);
-            TileEntityLighting = b.define(I18n.get("dynlights.tile_entity_lighting.name"), true);
-            OnlyUpdateOnPositionChange = b.define(I18n.get("dynlights.only_update_on_position_change.name"), true);
+        builder.Block("Lighting Settings", b -> {
+            Quality = b.defineEnum("Quality Mode (OFF, SLOW, FAST, REALTIME)", QualityMode.REALTIME);
+            EntityLighting = b.define("Dynamic Entity Lighting", true);
+            TileEntityLighting = b.define("Dynamic TileEntity Lighting", true);
+            OnlyUpdateOnPositionChange = b.define("Only Update On Position Change", true);
         });
 
         ConfigSpec = builder.Save();
