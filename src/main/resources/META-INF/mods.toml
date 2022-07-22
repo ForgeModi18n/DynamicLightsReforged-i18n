@@ -3,24 +3,24 @@ loaderVersion="[36,)" #mandatory
 license="MIT"
 
 [[mods]] #mandatory
-modId="dynamiclightsreforged" #mandatory
+modId="magnesium_dynamiclights" #mandatory
 version="${file.jarVersion}" #mandatory
-displayName="Dynamic Lights Reforged" #mandatory
+displayName="Magnesium Dynamic Lights" #mandatory
 logoFile= "icon.png" #optional
 credits="TeamDeusVult" #optional
 authors="TexTrue,TexStudio-i18nProject" #optional
 description='''
-Dynamic Lights Reforged
+Magnesium Dynamic Lights
 '''
 
-[[dependencies.dynamiclightsreforged]] #optional
+[[dependencies.magnesium_dynamiclights]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
     versionRange="[36,)" #mandatory
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dynamiclightsreforged]]
+[[dependencies.magnesium_dynamiclights]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"

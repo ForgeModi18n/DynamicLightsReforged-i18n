@@ -1,0 +1,28 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.textrue.mg_dynlights.mixin",
+  "plugin": "com.textrue.mg_dynlights.LambDynLightsMixinPlugin",
+  "refmap": "magnesium_dynamiclights.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "AbstractDecorationEntityMixin",
+    "AbstractMinecartEntityMixin",
+    "BlockEntityMixin",
+    "ClientWorldMixin",
+    "CommonWorldRendererMixin",
+    "EntityMixin",
+    "EntityRendererMixin",
+    "ExplosiveProjectileEntityMixin",
+    "LivingEntityMixin",
+    "MinecraftClientMixin",
+    "PlayerEntityMixin",
+    "TntEntityMixin",
+    "WorldMixin",
+    "WorldRendererMixin",
+    "sodium.SodiumSettingsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
