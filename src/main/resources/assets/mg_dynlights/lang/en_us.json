@@ -1,14 +1,14 @@
 {
-  "dynlights.options.off": "Off",
-  "dynlights.options.slow": "Slow",
-  "dynlights.options.fast": "Fast",
-  "dynlights.options.realtime": "Realtime",
+  "mg_dynlights.options.off": "Off",
+  "mg_dynlights.options.slow": "Slow",
+  "mg_dynlights.options.fast": "Fast",
+  "mg_dynlights.options.realtime": "Realtime",
 
-  "dynlights.dynlights.option.name": "Dynamic Lights",
-  "dynlights.dynlights.dynlight_speed.title": "Dynamic Lights Speed",
-  "dynlights.dynlights.dynlight_speed.desc": "Controls how often dynamic lights will update. \n\n\nLighting recalculation can be expensive, so slower values will give better performance. \n\n\nOff - Self explanatory \nSlow - Twice a second \nFast - Five times a second \nRealtime - Every tick",
-  "dynlights.dynlights.entity_lights.title": "Dynamic Entity Lights",
-  "dynlights.dynlights.entity_lights.desc": "Turning this on will show dynamic lighting on entities (dropped items, mobs, etc). \n\nThis can drastically increase the amount of lighting updates, even when you're not holding a torch.",
-  "dynlights.dynlights.block_lights.title": "Dynamic Block Lights",
-  "dynlights.dynlights.block_lights.desc": "Turning this on will show dynamic lighting on tile entities (furnaces, modded machines, etc). \n\nThis can drastically increase the amount of lighting updates, even when you're not holding a torch."
+  "mg_dynlights.dynlights.option.name": "Dynamic Lights",
+  "mg_dynlights.dynlights.dynlight_speed.title": "Dynamic Lights Speed",
+  "mg_dynlights.dynlights.dynlight_speed.desc": "Controls how often dynamic lights will update. \n\n\nLighting recalculation can be expensive, so slower values will give better performance. \n\n\nOff - Self explanatory \nSlow - Twice a second \nFast - Five times a second \nRealtime - Every tick",
+  "mg_dynlights.dynlights.entity_lights.title": "Dynamic Entity Lights",
+  "mg_dynlights.dynlights.entity_lights.desc": "Turning this on will show dynamic lighting on entities (dropped items, mobs, etc). \n\nThis can drastically increase the amount of lighting updates, even when you're not holding a torch.",
+  "mg_dynlights.dynlights.block_lights.title": "Dynamic Block Lights",
+  "mg_dynlights.dynlights.block_lights.desc": "Turning this on will show dynamic lighting on tile entities (furnaces, modded machines, etc). \n\nThis can drastically increase the amount of lighting updates, even when you're not holding a torch."
 }
