@@ -22,6 +22,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
+import net.minecraft.client.resources.I18n;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,12 +44,17 @@ public abstract class SodiumSettingsMixin {
         List<OptionGroup> groups = new ArrayList<>();
 
         OptionImpl<SodiumGameOptions, QualityMode> qualityMode = OptionImpl.createBuilder(QualityMode.class, dynamicLightsOpts)
-                .setName("Dynamic Lights Speed")
-                .setTooltip("Controls how often dynamic lights will update. " +
-                        "\n\nLighting recalculation can be expensive, so slower values will give better performance." +
-                        "\n\nOff - Self explanatory\nSlow - Twice a second\nFast - Five times a second\nRealtime - Every tick")
+                .setName(I18n.get("dynamic_lights.dynlights.dynlight_speed.title"))
+                .setTooltip(I18n.get("dynamic_lights.dynlights.dynlight_speed.desc"))
                 .setControl(
-                        (option) -> new CyclingControl<>(option, QualityMode.class, new String[] { "Off", "Slow", "Fast", "Realtime" }))
+                        (option) -> new CyclingControl<>(option, QualityMode.class, new String[] {
+                                I18n.get("dynamic_lights.options.off"),
+                                I18n.get("dynamic_lights.options.slow"),
+                                I18n.get("dynamic_lights.options.fast"),
+                                I18n.get("dynamic_lights.options.realtime")
+                        }
+                        )
+                )
                 .setBinding(
                         (options, value) -> {
                             DynamicLightsConfig.Quality.set(value.toString());
@@ -60,9 +66,8 @@ public abstract class SodiumSettingsMixin {
 
 
         OptionImpl<SodiumGameOptions, Boolean> entityLighting = OptionImpl.createBuilder(Boolean.class, dynamicLightsOpts)
-                .setName("Dynamic Entity Lights")
-                .setTooltip("Turning this on will show dynamic lighting on entities (dropped items, mobs, etc). " +
-                        "\n\nThis can drastically increase the amount of lighting updates, even when you're not holding a torch.")
+                .setName(I18n.get("dynamic_lights.dynlights.entity_lights.title"))
+                .setTooltip(I18n.get("dynamic_lights.dynlights.entity_lights.desc"))
                 .setControl(TickBoxControl::new)
                 .setBinding(
                         (options, value) -> DynamicLightsConfig.EntityLighting.set(value),
@@ -71,9 +76,8 @@ public abstract class SodiumSettingsMixin {
                 .build();
 
         OptionImpl<SodiumGameOptions, Boolean> tileEntityLighting = OptionImpl.createBuilder(Boolean.class, dynamicLightsOpts)
-                .setName("Dynamic Block Lights")
-                .setTooltip("Turning this on will show dynamic lighting on tile entities (furnaces, modded machines, etc). " +
-                        "\n\nThis can drastically increase the amount of lighting updates, even when you're not holding a torch.")
+                .setName(I18n.get("dynamic_lights.dynlights.block_lights.title"))
+                .setTooltip(I18n.get("dynamic_lights.dynlights.block_lights.desc"))
                 .setControl(TickBoxControl::new)
                 .setBinding(
                         (options, value) -> DynamicLightsConfig.TileEntityLighting.set(value),
@@ -89,7 +93,7 @@ public abstract class SodiumSettingsMixin {
             .build()
         );
 
-        pages.add(new OptionPage("Dynamic Lights", ImmutableList.copyOf(groups)));
+        pages.add(new OptionPage(I18n.get("dynamic_lights.dynlights.option.name"), ImmutableList.copyOf(groups)));
     }
 
 

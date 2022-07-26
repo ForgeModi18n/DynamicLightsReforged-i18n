@@ -98,9 +98,9 @@ public class DynamicLightsReforged
 
     public DynamicLightsReforged() {
         INSTANCE = this;
-        log("Initializing Dynamic Lights Reforged...");
+        log("Initializing Magnesium/Rubidium Dynamic Lights...");
         //this.config.load();
-        DynamicLightsConfig.loadConfig(FMLPaths.CONFIGDIR.get().resolve("dynamic_lights_reforged.toml"));
+        DynamicLightsConfig.loadConfig(FMLPaths.CONFIGDIR.get().resolve("mgrb_dynamic_lights.toml"));
 
         //MinecraftForge.EVENT_BUS.register(this);
 
