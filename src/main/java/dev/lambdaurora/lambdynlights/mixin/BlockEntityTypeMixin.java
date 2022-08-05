@@ -14,7 +14,7 @@ import dev.lambdaurora.lambdynlights.accessor.DynamicLightHandlerHolder;
 import dev.lambdaurora.lambdynlights.api.DynamicLightHandler;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.util.;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import org.jetbrains.annotations.Nullable;

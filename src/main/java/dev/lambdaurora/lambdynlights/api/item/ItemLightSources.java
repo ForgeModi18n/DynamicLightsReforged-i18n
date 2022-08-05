@@ -49,7 +49,7 @@ public final class ItemLightSources {
 	public static void load(@NotNull ResourceManager resourceManager) {
 		ITEM_LIGHT_SOURCES.clear();
 
-		resourceManager.listResources("dynamiclights/item", path -> path.endsWith(".json")).forEach(id -> load(resourceManager, id));
+		resourceManager.listResources("dynamiclights/item", path -> path.equals(".json")).forEach(id -> load(resourceManager, id));
 
 		ITEM_LIGHT_SOURCES.addAll(STATIC_ITEM_LIGHT_SOURCES);
 	}
@@ -57,7 +57,7 @@ public final class ItemLightSources {
 	private static void load(@NotNull ResourceManager resourceManager, @NotNull ResourceLocation resourceId) {
 		var id = new ResourceLocation(resourceId.getNamespace(), resourceId.getPath().replace(".json", ""));
 		try {
-			var stream = resourceManager.getResource(resourceId).getInputStream();
+			var stream = resourceManager.getResource(resourceId).orElseGet();
 			var json = JSON_PARSER.parse(new InputStreamReader(stream)).getAsJsonObject();
 
 			ItemLightSource.fromJson(id, json).ifPresent(data -> {
