@@ -1,0 +1,14 @@
+{
+  "rb_dynlights.options.off": "Off",
+  "rb_dynlights.options.slow": "Slow",
+  "rb_dynlights.options.fast": "Fast",
+  "rb_dynlights.options.realtime": "Realtime",
+
+  "rb_dynlights.dynlights.option.name": "Dynamic Lights",
+  "rb_dynlights.dynlights.dynlight_speed.title": "Dynamic Lights Speed",
+  "rb_dynlights.dynlights.dynlight_speed.desc": "Controls how often dynamic lights will update. \n\n\nLighting recalculation can be expensive, so slower values will give better performance. \n\n\nOff - Self explanatory \nSlow - Twice a second \nFast - Five times a second \nRealtime - Every tick",
+  "rb_dynlights.dynlights.entity_lights.title": "Dynamic Entity Lights",
+  "rb_dynlights.dynlights.entity_lights.desc": "Turning this on will show dynamic lighting on entities (dropped items, mobs, etc). \n\nThis can drastically increase the amount of lighting updates, even when you're not holding a torch.",
+  "rb_dynlights.dynlights.block_lights.title": "Dynamic Block Lights",
+  "rb_dynlights.dynlights.block_lights.desc": "Turning this on will show dynamic lighting on tile entities (furnaces, modded machines, etc). \n\nThis can drastically increase the amount of lighting updates, even when you're not holding a torch."
+}

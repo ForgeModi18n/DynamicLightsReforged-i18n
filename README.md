@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="mod_icon/DynLights.png" align="center" alt="Magnesium/Rubidium-DynamicLights Logo" />
+ <img width="100px" src="mod_icon/icon.png" align="center" alt="Magnesium/Rubidium-DynamicLights Logo" />
  <h2 align="center">Magnesium/Rubidium-DynamicLights i18n</h2>
  <p align="center"></p>
 
