@@ -44,14 +44,14 @@ public abstract class SodiumSettingsMixin {
         List<OptionGroup> groups = new ArrayList<>();
 
         OptionImpl<SodiumGameOptions, QualityMode> qualityMode = OptionImpl.createBuilder(QualityMode.class, dynamicLightsOpts)
-                .setName(I18n.get("dynamic_lights.dynlights.dynlight_speed.title"))
-                .setTooltip(I18n.get("dynamic_lights.dynlights.dynlight_speed.desc"))
+                .setName(I18n.get("rb_dynlights.dynlights.dynlight_speed.title"))
+                .setTooltip(I18n.get("rb_dynlights.dynlights.dynlight_speed.desc"))
                 .setControl(
                         (option) -> new CyclingControl<>(option, QualityMode.class, new String[] {
-                                I18n.get("dynamic_lights.options.off"),
-                                I18n.get("dynamic_lights.options.slow"),
-                                I18n.get("dynamic_lights.options.fast"),
-                                I18n.get("dynamic_lights.options.realtime")
+                                I18n.get("rb_dynlights.options.off"),
+                                I18n.get("rb_dynlights.options.slow"),
+                                I18n.get("rb_dynlights.options.fast"),
+                                I18n.get("rb_dynlights.options.realtime")
                         }
                         )
                 )
@@ -66,8 +66,8 @@ public abstract class SodiumSettingsMixin {
 
 
         OptionImpl<SodiumGameOptions, Boolean> entityLighting = OptionImpl.createBuilder(Boolean.class, dynamicLightsOpts)
-                .setName(I18n.get("dynamic_lights.dynlights.entity_lights.title"))
-                .setTooltip(I18n.get("dynamic_lights.dynlights.entity_lights.desc"))
+                .setName(I18n.get("rb_dynlights.dynlights.entity_lights.title"))
+                .setTooltip(I18n.get("rb_dynlights.dynlights.entity_lights.desc"))
                 .setControl(TickBoxControl::new)
                 .setBinding(
                         (options, value) -> DynamicLightsConfig.EntityLighting.set(value),
@@ -76,8 +76,8 @@ public abstract class SodiumSettingsMixin {
                 .build();
 
         OptionImpl<SodiumGameOptions, Boolean> tileEntityLighting = OptionImpl.createBuilder(Boolean.class, dynamicLightsOpts)
-                .setName(I18n.get("dynamic_lights.dynlights.block_lights.title"))
-                .setTooltip(I18n.get("dynamic_lights.dynlights.block_lights.desc"))
+                .setName(I18n.get("rb_dynlights.dynlights.block_lights.title"))
+                .setTooltip(I18n.get("rb_dynlights.dynlights.block_lights.desc"))
                 .setControl(TickBoxControl::new)
                 .setBinding(
                         (options, value) -> DynamicLightsConfig.TileEntityLighting.set(value),
@@ -93,7 +93,7 @@ public abstract class SodiumSettingsMixin {
             .build()
         );
 
-        pages.add(new OptionPage(I18n.get("dynamic_lights.dynlights.option.name"), ImmutableList.copyOf(groups)));
+        pages.add(new OptionPage(I18n.get("rb_dynlights.dynlights.option.name"), ImmutableList.copyOf(groups)));
     }
 
 
