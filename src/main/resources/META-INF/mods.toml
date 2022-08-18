@@ -1,11 +1,13 @@
 modLoader="javafml" #mandatory
 loaderVersion="[36,)" #mandatory
+issueTrackerURL="https://github.com/ForgeModi18n/MgRbDynamicLights-i18n/issues" #optional
 license="MIT"
 
 [[mods]] #mandatory
 modId="rubidium_dynamiclights" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Rubidium Dynamic Lights" #mandatory
+displayURL="https://github.com/ForgeModi18n/MgRbDynamicLights-i18n" #optional
 logoFile="icon.png" #optional
 credits="TeamDeusVult" #optional
 authors="TexTrue,TexStudio-i18nProject" #optional
